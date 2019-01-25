@@ -10,15 +10,64 @@ img {
   width: 1000px;
   margin-top: 35px;
   margin-bottom: 35px;
+  border-radius: 5px;
+  border-radius: 20px;
+  border: 5px solid white;
 }
 
 a {
   font-size: 45px;
   text-decoration: none;
   color: #0021FF;
-  border: 2px solid white;
+  border: 5px solid red;
   border-radius: 5px;
   letter-spacing: 3px;
   background-color: white;
   font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  letter-spacing: 7px;
+  font-size: 45px;
+  color: red;
+  outline: 5px dotted white;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-shadow: 3px 3px 3px white;
+}
+
+input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  width: 500px;
+  height: 60px;
+  border: 5px solid yellow;
+}
+
+button {
+  width: 300px;
+  height: 60px;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 5px solid red;
+
+}
+
+.Smurf {
+  border: 5px solid yellow;
+  border-radius: 10px;
+  background-color: white;
+  color: #0021FF;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 1300px;;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }

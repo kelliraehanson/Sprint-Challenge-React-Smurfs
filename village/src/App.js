@@ -39,11 +39,13 @@ class App extends Component {
     return (
       <div className="App">
 
+      <nav>
+
       <img src="https://images.justwatch.com/backdrop/46395655/s1440/the-smurfs"></img><br>
       </br>
 
       <NavLink exact to='/'>
-      SMURF GALLERY
+      SMURF VILLAGE
       </NavLink>
       &nbsp;
       &nbsp;
@@ -67,13 +69,16 @@ class App extends Component {
       render={props => (
         <SmurfForm addNewSmurf={this.addNewSmurf}/> 
       )} />
+      
+      </nav>
 
-        {/* <SmurfForm addNewSmurf={this.addNewSmurf}/>  */}
-        {/* <Smurfs smurfs={this.state.smurfs} />  */}
       </div>
     );
   }
 }
 
 export default App;
+
+ {/* <SmurfForm addNewSmurf={this.addNewSmurf}/>  */}
+        {/* <Smurfs smurfs={this.state.smurfs} />  */}
 
