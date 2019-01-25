@@ -56,8 +56,20 @@ class App extends Component {
       ADD A SMURF
       </NavLink>
 
-        <SmurfForm addNewSmurf={this.addNewSmurf}/> 
+      <Route 
+      exact path='/'
+      render={props => (
         <Smurfs smurfs={this.state.smurfs} /> 
+      )} />
+
+      <Route
+      path='/smurfform'
+      render={props => (
+        <SmurfForm addNewSmurf={this.addNewSmurf}/> 
+      )} />
+
+        {/* <SmurfForm addNewSmurf={this.addNewSmurf}/>  */}
+        {/* <Smurfs smurfs={this.state.smurfs} />  */}
       </div>
     );
   }
@@ -65,14 +77,3 @@ class App extends Component {
 
 export default App;
 
-{/* <Route 
-exact path='/'
-render={props => (
-  <Smurfs {...props} smurfs={this.state.smurfs} />
-)} /> */}
-
-// <Route
-//       path='/smurfform'
-//       render={props => (
-//         <SmurfForm {...props} smurf={this.state.smurf} />
-//       )} />
